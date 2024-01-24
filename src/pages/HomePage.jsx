@@ -1,12 +1,15 @@
 import React from 'react';
 import { Box, Heading, Text, Button, SimpleGrid } from '@chakra-ui/react';
 import Slider from 'react-slick';
+import WelcomeSection from '../components/WelcomeSection';
 import Image1 from '../assets/images/img_01.jpg';
 import Image2 from '../assets/images/img_02.jpg';
 import Image3 from '../assets/images/img_03.jpg';
 import Image4 from '../assets/images/img_04.jpg';
 import Image5 from '../assets/images/img_05.jpg';
 import Image6 from '../assets/images/img_06.jpg';
+import ServicesHighlights from '../components/ServicesHighlights';
+import Footer from '../components/Footer'
 
 function HomePage() {
     const settings = {
@@ -38,7 +41,9 @@ function HomePage() {
             <SimpleGrid columns={3} spacing={10} p={10}>
                 {/* Cards de características */}
             </SimpleGrid>
-            {/* Seções de testimonials e call to action */}
+            <WelcomeSection />
+            <ServicesHighlights />
+            <Footer />
         </Box>
     );
 }
