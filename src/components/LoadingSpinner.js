@@ -1,14 +1,16 @@
-import { motion } from 'framer-motion';
-import LogoImage from '../assets/images/logo'
+// LoadingSpinner.js
+import React from 'react';
+import './LoadingSpinner.css'; // Importando o CSS
 
 function LoadingSpinner() {
   return (
-    <motion.div
-      animate={{ rotate: 360 }}
-      transition={{ duration: 1, loop: Infinity, ease: "linear" }}
-    >
-      {LogoImage}
-    </motion.div>
+    <div className="spinner-container">
+      <div className="orbit-spinner">
+        <div className="planet-spinner"></div>
+        <div className="stars"></div>
+      </div>
+    </div>
   );
 }
-export default LoadingSpinner
+
+export default LoadingSpinner;

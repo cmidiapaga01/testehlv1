@@ -6,7 +6,7 @@ import { FaMapMarkerAlt, FaClock, FaDollarSign, FaStar } from 'react-icons/fa';
 import Image1 from '../assets/images/img_01.jpg'; // Substitua por suas imagens reais
 import Image2 from '../assets/images/img_02.jpg'; // Substitua por suas imagens reais
 import Image3 from '../assets/images/img_03.jpg'; // Substitua por suas imagens reais
-
+import ScrollAnimation from '../components/ScrollAnimation'
 const tours = [
   {
     id: 1,
@@ -74,6 +74,7 @@ function BoursPage() {
           </Box>
         ))}
       </SimpleGrid>
+      <ScrollAnimation />
     </Box>
   );
 }

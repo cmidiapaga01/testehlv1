@@ -6,6 +6,7 @@ import ServicesHighlights from '../components/ServicesHighlights';
 import CountriesSection from '../components/CountriesSection';
 import Footer from '../components/Footer';
 import LoadingSpinner from '../components/LoadingSpinner';
+import ScrollAnimation2 from '../components/ScrollAnimation2';
 import Image3 from '../assets/images/img_03.jpg';
 import Image4 from '../assets/images/img_04.jpg';
 import Image5 from '../assets/images/img_05.jpg';
@@ -50,7 +51,7 @@ function HomePage() {
                 </Box>
             </Slider>
             <WelcomeSection />
-            <ServicesHighlights />
+            <ScrollAnimation2 />
             <CountriesSection />
             <Footer />
         </Box>
